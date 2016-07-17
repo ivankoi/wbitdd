@@ -17,7 +17,13 @@ public class FractionsTest {
     }
 
     @Test
+    public void test12Over5Plus4Over7() {
+        assertEquals(new Fraction(104, 35), Fractions.add(new Fraction(12, 5), new Fraction(4, 7)));
+    }
+
+    @Test
     public void testOnePlusOneHalf() {
         assertEquals(new Fraction(3, 2), Fractions.add(new Fraction(1), new Fraction(1, 2)));
     }
+
 }
