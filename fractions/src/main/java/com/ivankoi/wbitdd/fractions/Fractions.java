@@ -1,16 +1,17 @@
 package com.ivankoi.wbitdd.fractions;
 
 /**
+ * Utility class for fractions arithmetic
+ *
  * Created by ivank on 7/17/2016.
  */
-public class Fractions {
+class Fractions {
 
-    public static int add(int op1, int op2) {
-        return 2;
-    }
+    static Fraction add(Fraction op1, Fraction op2) {
+        int resultNumerator = op1.numerator * op2.denominator + op2.numerator * op1.denominator;
+        int resultDenominator = op1.denominator * op2.denominator;
 
-    public static Fraction add(Fraction op1, Fraction op2) {
-        return new Fraction(3, 2);
+        return new Fraction(resultNumerator, resultDenominator);
     }
 
 }

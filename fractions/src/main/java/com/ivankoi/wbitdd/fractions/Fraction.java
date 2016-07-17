@@ -1,19 +1,21 @@
 package com.ivankoi.wbitdd.fractions;
 
 /**
- * Created by ivank on 7/17/2016.
+ * Fraction class
+ *
+ * Created by ivan on 7/17/2016.
  */
-public class Fraction {
+class Fraction {
 
-    private final int numerator;
-    private final int denominator;
+    final int numerator;
+    final int denominator;
 
-    public Fraction(int numerator, int denominator) {
+    Fraction(int numerator, int denominator) {
         this.numerator = numerator;
         this.denominator = denominator;
     }
 
-    public Fraction(int numerator) {
+    Fraction(int numerator) {
         this.numerator = numerator;
         this.denominator = 1;
     }
@@ -35,5 +37,13 @@ public class Fraction {
         int result = numerator;
         result = 31 * result + denominator;
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Fraction{" +
+                "numerator=" + numerator +
+                ", denominator=" + denominator +
+                '}';
     }
 }
