@@ -11,7 +11,7 @@ class Fractions {
         int resultNumerator = op1.numerator * op2.denominator + op2.numerator * op1.denominator;
         int resultDenominator = op1.denominator * op2.denominator;
 
-        return new Fraction(resultNumerator, resultDenominator);
+        return new Fraction(resultNumerator, resultDenominator).simplify();
     }
 
 }
