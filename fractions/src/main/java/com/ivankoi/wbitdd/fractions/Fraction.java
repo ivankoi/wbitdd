@@ -4,7 +4,10 @@ package com.ivankoi.wbitdd.fractions;
  * Created by ivank on 1/16/2017.
  */
 public class Fraction {
-    public Fraction(int i) {
+    private final int intValue;
+
+    public Fraction(int intValue) {
+        this.intValue = intValue;
     }
 
     public Fraction plus(Fraction fraction) {
@@ -12,6 +15,6 @@ public class Fraction {
     }
 
     public int intValue() {
-        return 0;
+        return intValue;
     }
 }
