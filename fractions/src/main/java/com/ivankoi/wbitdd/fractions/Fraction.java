@@ -1,18 +1,15 @@
 package com.ivankoi.wbitdd.fractions;
 
 public class Fraction {
-    private final int integerValue;
     private int numerator;
     private int denominator;
 
     public Fraction(int integerValue) {
-        this.integerValue = integerValue;
         this.numerator = integerValue;
         this.denominator = 1;
     }
 
     public Fraction(int numerator, int denominator) {
-        this.integerValue = numerator;
         this.numerator = numerator;
         this.denominator = denominator;
     }
