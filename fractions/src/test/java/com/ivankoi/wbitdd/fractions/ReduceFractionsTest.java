@@ -22,6 +22,10 @@ public class ReduceFractionsTest {
     @Test
     public void reduceToWholeNumber() throws Exception {
         assertEquals(new Fraction(6), new Fraction(24, 4));
+    }
 
+    @Test
+    public void reduceZero() throws Exception {
+        assertEquals(new Fraction(0), new Fraction(0, 143214));
     }
 }
