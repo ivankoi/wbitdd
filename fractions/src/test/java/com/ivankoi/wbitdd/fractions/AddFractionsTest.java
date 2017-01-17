@@ -40,7 +40,12 @@ public class AddFractionsTest {
     }
 
     @Test
-    public void nonTrivialButCommon() throws Exception {
+    public void nonTrivialButCommonDenominator() throws Exception {
         assertEquals(new Fraction(3, 5), new Fraction(1, 5).plus(new Fraction(2, 5)));
+    }
+
+    @Test
+    public void differentDenominatorsWithoutReducing() throws Exception {
+        assertEquals(new Fraction(5, 6), new Fraction(1, 2).plus(new Fraction(1, 3)));
     }
 }
