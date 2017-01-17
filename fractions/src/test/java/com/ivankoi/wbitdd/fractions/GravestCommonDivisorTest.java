@@ -2,6 +2,7 @@ package com.ivankoi.wbitdd.fractions;
 
 import org.junit.Test;
 
+import static com.ivankoi.wbitdd.fractions.NumberTheory.gcd;
 import static java.lang.Math.abs;
 import static junit.framework.TestCase.assertEquals;
 
@@ -43,12 +44,4 @@ public class GravestCommonDivisorTest {
         assertEquals(4, gcd(24, -28));
     }
 
-    private int gcd(int a, int b) {
-        while (b != 0) {
-             int t = b;
-             b = a % t;
-             a = t;
-        }
-        return abs(a);
-    }
 }
