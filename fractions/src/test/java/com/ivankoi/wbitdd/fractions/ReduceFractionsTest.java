@@ -18,4 +18,10 @@ public class ReduceFractionsTest {
     public void reduceToNotWholeNumbers() throws Exception {
         assertEquals(new Fraction(3, 4), new Fraction(6, 8));
     }
+
+    @Test
+    public void reduceToWholeNumber() throws Exception {
+        assertEquals(new Fraction(6), new Fraction(24, 4));
+
+    }
 }
