@@ -29,4 +29,11 @@ public class Fraction {
         }
         return false;
     }
+
+    @Override
+    public int hashCode() {
+        int result = numerator;
+        result = 19 * result + denominator;
+        return result;
+    }
 }
